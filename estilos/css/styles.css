@@ -203,6 +203,7 @@ body {
 .columnaimg img {
   margin-top: 5px; }
 
+/*ACADEMICO*/
 /*NOSOTROS*/
 #quienessomos {
   text-align: center;
@@ -267,6 +268,85 @@ body {
 
 .tituloaires2 {
   padding: 0px 20px; }
+
+#hojadeportes {
+  display: flex;
+  justify-content: center;
+  margin: auto; }
+
+.card_deporte {
+  position: relative;
+  width: 300px;
+  height: 350px;
+  margin: 20px; }
+
+.face_front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: black 0px 5px 10px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s; }
+
+.face_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: perspective(600px) rotateY(180deg);
+  color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: black 0px 5px 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s ease 0s;
+  background: #032336;
+  padding: 15px; }
+
+.face_front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.face_front h2 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: white;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.4); }
+
+.face_back h2 {
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px; }
+
+.face_back p {
+  letter-spacing: 1px; }
+
+.linkcard {
+  height: 50px;
+  line-height: 50px;
+  border-top: 1px solid #f3f3f3; }
+
+.linkcard a {
+  color: #3498db;
+  text-decoration: none; }
+
+.card_deporte:hover .face_front {
+  transform: perspective(600px) rotateY(180deg); }
+
+.card_deporte:hover .face_back {
+  transform: perspective(600px) rotateY(360deg); }
 
 /*RESPONSIVE CELU*/
 @media (max-width: 320px) {
