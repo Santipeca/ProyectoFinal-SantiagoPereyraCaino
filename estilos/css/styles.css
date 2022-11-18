@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box; }
 
@@ -12,7 +13,7 @@ body {
   padding: 0;
   font-family: sans-serif; }
 
-/*INDEX2*/
+/*INDEX*/
 .container {
   max-width: 1300px;
   margin: auto; }
@@ -76,14 +77,14 @@ body {
 
 #niveles {
   text-align: center;
-  padding: 10px 10px;
+  padding: 10px 30px 10px 0px;
   display: flex; }
 
 .container_niveles2 h2 {
-  font-size: 6em; }
+  font-size: 5em; }
 
 .container_niveles2 h3 {
-  font-size: 4em; }
+  font-size: 3em; }
 
 .container_niveles {
   margin: auto;
@@ -183,10 +184,105 @@ body {
   font-size: 9px; }
 
 /*INSTITUCIONAL*/
+.containercarrusel {
+  margin: auto;
+  background-color: white;
+  max-width: 800px;
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box; }
+
+.containercarrusel > ul, li {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.containercarrusel > .slider {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  height: 300px; }
+
+.containercarrusel > .slider h1 {
+  position: absolute;
+  color: white;
+  background-color: rgba(235, 81, 26, 0.747);
+  padding: 10px;
+  left: 70%;
+  top: 20px; }
+
+.containercarrusel > .slider li {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  width: inherit;
+  height: inherit;
+  transition: opacity .5s;
+  background: #fff; }
+
+.containercarrusel > .slider li img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; }
+
+.containercarrusel > .slider li:first-child {
+  opacity: 1; }
+
+.containercarrusel > .slider li:target {
+  opacity: 1; }
+
+.containercarrusel > .menu {
+  text-align: center;
+  margin: 20px; }
+
+.containercarrusel > .menu li {
+  display: inline-block;
+  text-align: center; }
+
+.containercarrusel > .menu li a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  background-color: #000046;
+  width: 20px;
+  height: 20px;
+  font-size: 16px;
+  border-radius: 100%; }
+
+.infocarrusel h1 {
+  margin-top: 0;
+  text-align: center;
+  color: orangered;
+  font-size: 3rem; }
+
+.infocarrusel2 {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0px 20px;
+  flex-direction: column;
+  text-align: center; }
+
+.infoslide1 {
+  background-color: #9e9e9e;
+  border: solid 2px orangered; }
+
+.infoslide2 {
+  background-color: #9e9e9e;
+  border: solid 2px #000046; }
+
 .galeria_title {
   text-align: center;
   font-size: 3rem;
-  padding: 0,8em 1em; }
+  padding: 20px;
+  background-color: #000046;
+  color: orangered; }
+
+.galeria_title2 {
+  text-align: center;
+  font-size: .8rem; }
 
 .img-inst {
   width: 100%; }
@@ -204,6 +300,45 @@ body {
   margin-top: 5px; }
 
 /*ACADEMICO*/
+.card_talleres {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto; }
+
+.taller {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s; }
+
+.taller:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2); }
+
+.taller img {
+  width: 330px;
+  height: 220px; }
+
+.taller h3 {
+  font-weight: 600; }
+
+.talle p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300; }
+
+.taller a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db; }
+
 /*NOSOTROS*/
 #quienessomos {
   text-align: center;
@@ -260,6 +395,18 @@ body {
 
 .img-quienessomos:hover::before {
   transform: scale(1) rotate(360deg); }
+
+/*PRE INSCRIPCIÓN*/
+#fondoform {
+  background-color: rgba(255, 68, 0, 0.795); }
+
+.caja {
+  margin: auto;
+  width: 380px;
+  border: solid 2px #000046; }
+
+.botonesform {
+  text-align: center; }
 
 /*AIRES ATHLETIC*/
 .tituloaires {
@@ -368,6 +515,16 @@ body {
     flex-direction: column;
     justify-content: center; }
   /*INSTITUCIONAL*/
+  .containercarrusel h1 {
+    display: none; }
+  .infocarrusel2 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    padding: 0px 20px;
+    flex-direction: column;
+    text-align: center; }
   .columnaimg {
     flex: 100%; }
   /*NOSOTROS*/
@@ -375,6 +532,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center; }
+  /*PRE INSCRIPCIÓN*/
+  .caja {
+    width: 300px; }
+  /*AIRES ATHLETIC*/
+  #hojadeportes {
+    flex-direction: column;
     align-items: center; } }
 
 @media (max-width: 768px) {
