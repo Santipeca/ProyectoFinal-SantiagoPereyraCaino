@@ -1,0 +1,318 @@
+* {
+  box-sizing: border-box; }
+
+/*h1{ font-size: 3.5em;} 
+h2{ font-size: 2.5em;}
+h3{ font-size: 2.2em;}
+h4{ font-size: 1.5em;}
+p{ font-size: 1.2em;}
+ul{ list-style: none;}*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif; }
+
+/*INDEX2*/
+.container {
+  max-width: 1300px;
+  margin: auto; }
+
+.indexheader {
+  background-color: whitesmoke;
+  height: 80px;
+  margin: 0;
+  padding: 0px 20px; }
+
+.img-header {
+  display: flex;
+  height: 80px;
+  font-size: 9px;
+  padding: 10px 10px; }
+
+.container-index {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 0px 0px;
+  flex-direction: column;
+  font-size: 10px; }
+
+.opciones {
+  background-color: #000046;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  justify-content: space-around; }
+
+.opciones li a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0px 40px;
+  display: block; }
+
+.opciones li {
+  display: inline-block;
+  text-align: center; }
+
+.opciones li a:hover {
+  color: orange; }
+
+#hero {
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.95)), url(./fachada_css.jfif);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#niveles {
+  text-align: center;
+  padding: 10px 10px;
+  display: flex; }
+
+.container_niveles2 h2 {
+  font-size: 6em; }
+
+.container_niveles2 h3 {
+  font-size: 4em; }
+
+.container_niveles {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0px 0px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px; }
+
+.imagen_ninos {
+  height: 800px; }
+
+.container_niveles2 {
+  margin: auto; }
+
+.color-distinto {
+  color: orangered; }
+
+.container_niveles2 h2 {
+  margin-top: 0; }
+
+.nivelesh3 {
+  font-size: 2.5em; }
+
+.detallenivel {
+  font-size: 1.2em; }
+
+#valores {
+  text-align: center;
+  background-color: #000046;
+  color: white; }
+
+.nuestros_valores {
+  font-size: 2em; }
+
+.container_valores {
+  padding: 20px 0px; }
+
+.maestro_cartas {
+  display: flex;
+  justify-content: center; }
+
+.carta {
+  background-position: center center;
+  background-size: cover;
+  padding: 50px;
+  margin: 15px;
+  border-radius: 15px;
+  background-repeat: no-repeat; }
+
+.carta:first-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://sonriemama.com/wp-content/uploads/2019/11/ensenar-respeto-ninos.jpg"); }
+
+.carta:nth-child(2) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.chiquipedia.com/imagenes/los-10-mejores-juegos-de-confianza-para-ninos.jpg"); }
+
+.carta:last-child {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://diocesanos.es/blogs/orientapvi/wp-content/uploads/sites/16/2015/03/148198776.jpg"); }
+
+#frase {
+  color: orangered;
+  font-style: italic;
+  background-color: whitesmoke;
+  margin: 0px;
+  flex-direction: column; }
+
+.container_frase1 h4 {
+  padding-left: 50px;
+  font-size: medium; }
+
+.container_frase2 h4 {
+  padding-left: 1250px;
+  font-size: small; }
+
+.pie-pagina {
+  background-color: #b4b4b4;
+  width: 100%; }
+
+.container-foot {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  padding: 0px 0px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px; }
+
+.container-foot2 {
+  background-color: #9e9e9e;
+  padding: 5px 10px;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+  font-size: 9px; }
+
+/*INSTITUCIONAL*/
+.galeria_title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0,8em 1em; }
+
+.img-inst {
+  width: 100%; }
+
+.maestro_imagenes {
+  display: flex;
+  padding: 5px;
+  flex-wrap: wrap; }
+
+.columnaimg {
+  flex: 20%;
+  padding: 5px; }
+
+.columnaimg img {
+  margin-top: 5px; }
+
+/*NOSOTROS*/
+#quienessomos {
+  text-align: center;
+  padding: 10px 10px;
+  display: flex;
+  background-color: #f0e4e4; }
+
+.h2_historia {
+  color: orangered;
+  font-size: 3em; }
+
+.parrafo_historia {
+  font-size: 1.2em; }
+
+.container_quienessomos {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 0px 0px;
+  flex-direction: column;
+  text-align: center;
+  font-size: 10px; }
+
+.container_historia {
+  margin: auto; }
+
+.container_historia h2 {
+  margin-top: 0; }
+
+.container_historiadetalle {
+  padding-top: 30px; }
+
+.img-quienessomos {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
+
+.img-quienessomos::before {
+  content: "Familia Fundadora";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #5b40f3a6;
+  transform: scale(0);
+  transition: transform .4s;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem; }
+
+.img-quienessomos:hover::before {
+  transform: scale(1) rotate(360deg); }
+
+/*AIRES ATHLETIC*/
+.tituloaires {
+  text-align: center;
+  color: orangered; }
+
+.tituloaires2 {
+  padding: 0px 20px; }
+
+/*RESPONSIVE CELU*/
+@media (max-width: 320px) {
+  /*INICIO*/
+  .infoheader {
+    display: none; }
+  .container_niveles {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .container_ninos {
+    display: none; }
+  .maestro_cartas {
+    display: inline-block; }
+  .maestro_cartas p {
+    display: none; }
+  .container-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  /*INSTITUCIONAL*/
+  .columnaimg {
+    flex: 100%; }
+  /*NOSOTROS*/
+  .container_quienessomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
+
+@media (max-width: 768px) {
+  /*INICIO*/
+  .container_niveles {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .container_ninos {
+    display: none; }
+  .maestro_cartas {
+    display: contents; }
+  /*INSTITUCIONAL*/
+  .columnaimg {
+    flex: 50%; }
+  /*NOSOTROS*/
+  .container_quienessomos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
